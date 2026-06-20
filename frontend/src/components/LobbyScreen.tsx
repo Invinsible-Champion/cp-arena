@@ -39,7 +39,7 @@ const [customRoom, setCustomRoom] = useState<CustomRoomState | null>(() => {
       handle: user.cfHandle, 
       customRoomCode: customRoom?.roomCode 
     });
-    axios.get(`http://localhost:8080/api/history/${user.cfHandle}`)
+    axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/history/${user.cfHandle}`)
       .then(res => setHistory(res.data))
       .catch(err => console.error("Could not fetch history:", err));
   }, [user.cfHandle]);
