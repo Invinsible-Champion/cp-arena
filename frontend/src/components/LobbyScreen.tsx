@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Radar, Search, LogOut, Users, Key, Play, X, Trophy } from 'lucide-react';
+import { Radar, LogOut, Users, Key, Play, X, Trophy } from 'lucide-react';
 import axios from 'axios';
 import { socket } from '../lib/socket';
 import type { User } from '../App';

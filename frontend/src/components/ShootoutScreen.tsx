@@ -9,7 +9,7 @@ interface ShootoutScreenProps {
   onLogout: () => void;
 }
 
-export const ShootoutScreen = ({ user, onLogout }: ShootoutScreenProps) => {
+export const ShootoutScreen = ({ user }: ShootoutScreenProps) => {
   const location = useLocation();
   const navigate = useNavigate();
   

@@ -16,7 +16,7 @@ interface GameOverData {
   newRatingP2?: number;
 }
 
-export const ArenaScreen = ({ user, onLogout }: ArenaScreenProps) => {
+export const ArenaScreen = ({ user }: ArenaScreenProps) => {
   const location = useLocation();
   const navigate = useNavigate();
   
